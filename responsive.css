@@ -1,0 +1,35 @@
+/* 画面幅が600px以下の場合 */
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .header, .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em;
+    }
+    
+    .item {
+        flex: 1 1 200px;
+        background-color: #f4f4f4;
+        margin: 1em;
+        padding: 1em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* 画面幅が600px以下の場合 */
+    @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+}
